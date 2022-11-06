@@ -3,16 +3,24 @@
 
 20% of Bitcoin are said to be lost due to death of owner or forgotten seed and a staggering 85% of users are uncertain on incorperating crytocurrency into their estate planning.
 
-The current solutions are non-existent or of a bad product market fit, hence we think that StarkWill will be able to solve a pain point in the industry
+For users who like to inherit their assets, they have to inherit their assets by sharing their private key with successors or use a multisig wallet. We believe that is not the optimal experience for inheritance for 2 main reasons:
 
-Introducing StarkWill, the go-to application for crypto users to inherit their crypto assets to their love ones.
+1. You wallet is not fully yours - as you have to share your private keys OR gather signatures to perform transaction.
+2. Not replicate real world implementation - where will or inheritance are performed after owner death without sharing access to wallet.
+
+While, the current solutions are non-existent or of a bad product market fit, hence we think that StarkWill will be able to solve a pain point in the industry. 
+
+Introducing StarkWill, the go-to application for crypto users to inherit their crypto assets to their love ones build on **StarkNet** with account abstraction technologies.
 
 ## Features
+
+Inheritance assets without needs to share private key OR use any multisig wallet:
 
 - Customize percentage of wallet distribution for inheritance
 - Guardians/governers selection
 - Proof of death voting by guardians
 - Recipient claim when owner is unavailable
+
 
 ## How Starkwill works?
 
@@ -36,4 +44,8 @@ Each distribution rule is defined by a `Split`, akin to a split of a pie. A `Spl
 
 5. If the activation period ends without being rejected, the beneficiaries may start claiming their `Split`s.
 
+## Technologies used
 
+- Cairo
+  - Account abstraction
+- ReactJS (Nextjs)
