@@ -10,7 +10,7 @@ For users who like to inherit their assets, they have to inherit their assets by
 
 While, the current solutions are non-existent or of a bad product market fit, hence we think that StarkWill will be able to solve a pain point in the industry. 
 
-Introducing StarkWill, the go-to application for crypto users to inherit their crypto assets to their love ones build on **StarkNet** with account abstraction technologies.
+Introducing StarkWill, the go-to application for crypto users to inherit their crypto assets to their successors, build on **StarkNet** with account abstraction technologies.
 
 ## Features
 
@@ -49,3 +49,11 @@ Each distribution rule is defined by a `Split`, akin to a split of a pie. A `Spl
 - Cairo
   - Account abstraction
 - ReactJS (Nextjs)
+
+## Future Roadmap
+
+- [] Completion of voting mechanism
+- [] Higher precision of inheritance timeline
+- [] Improve UX for inheritance flow
+- [] Push notification
+- [] Inheritance on Ethereum (L1) through L1<>L2 interaction
