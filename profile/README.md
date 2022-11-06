@@ -52,8 +52,8 @@ Each distribution rule is defined by a `Split`, akin to a split of a pie. A `Spl
 
 ## Future Roadmap
 
-- [] Completion of voting mechanism
-- [] Higher precision of inheritance timeline
-- [] Improve UX for inheritance flow
-- [] Push notification
-- [] Inheritance on Ethereum (L1) through L1<>L2 interaction
+- [ ] Completion of voting mechanism
+- [ ] Higher precision of inheritance timeline
+- [ ] Improve UX for inheritance flow
+- [ ] Push notification
+- [ ] Inheritance on Ethereum (L1) through L1<>L2 interaction
