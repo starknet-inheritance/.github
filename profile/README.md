@@ -16,4 +16,24 @@ Introducing StarkWill, the go-to application for crypto users to inherit their c
 
 ## How Starkwill works?
 
-1. Any wallet owner create a
+This project tries to provide a way for user to create a 'will' for all their crypto assets so as to allow a set of beneficiaries to inherit them, in an event that the user no longer has access to their account (e.g. passed away), according to the will distribution rules set by the user.
+
+![diagram](https://github.com/starknet-inheritance/.github/blob/main/profile/image.png)
+
+1. User first initialize the Will through the factory contract. This is where the rules of the Will are set:-
+
+  - which beneficiaries will receive which tokens for what amount. 
+  - a multi sig rules for a list of users (called governors) that may start the Will activation period. 
+  - how long should the activation period be.
+
+Each distribution rule is defined by a `Split`, akin to a split of a pie. A `Split` consists of the `beneficiary address`, `token address`, and the `percentage`. It is important that the sum of percentages of all `Split`s with similar `token address` __MUST__ not exceed 100%. A Will may consists of multiple `Split` with different `token address`.
+
+2. Once the Will is created, the owner then __MUST__ approve allowance for all tokens specified in the Will in order to allow the contract to initiate the transfer of the tokens to their respective recipients.
+
+3. The governors can then decide to start the activation process for when the Will owner is determined to have passed away or simply inactive for a long period of time by supplying a multi sig according the multi sig threshold (i.e., how many governors' signatures are required to activate the Will).
+
+4. Once the activation function is called, the activation period starts and during this period, if the Will owner is still alive, they can reject/stop the activation if necessary.
+
+5. If the activation period ends without being rejected, the beneficiaries may start claiming their `Split`s.
+
+
