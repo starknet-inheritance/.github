@@ -28,6 +28,8 @@ This project tries to provide a way for user to create a 'will' for all their cr
 
 ![diagram](https://github.com/starknet-inheritance/.github/blob/main/profile/image.png)
 
+**NOTE: User must first upgrade their account contract implementation to [this](https://github.com/starknet-inheritance/contracts). This is because the Will contract needs to call the `get_latest_tx_timestamp` method to get the timestamp of the latest transaction made by the owner account in order for it to work properly.**
+
 1. User first initialize the Will through the factory contract. This is where the rules of the Will are set:-
 
   - which beneficiaries will receive which tokens for what amount. 
